@@ -4,14 +4,9 @@ import PropTypes from "prop-types";
 import Styled from "styled-components";
 import { connect } from "react-redux";
 
-import Header from "components/commons/Header";
-
 function CommonLayout(props) {
-  const { history } = props;
-
   return (
     <Main>
-      <Header history={history} />
       <Layout>{props.children}</Layout>
     </Main>
   );
@@ -38,9 +33,7 @@ CommonLayout.propTypes = {
 
 const Main = Styled.div`
   position: relative;
-  color: white;
   min-height: 100vh;
-  font-family: 'Barlow', 'Arial' !important;
 `;
 
 const Layout = Styled.div`

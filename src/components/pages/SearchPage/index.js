@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import BackgroundPage from "components/commons/BackgroundPage";
 import Text from "components/commons/Text";
@@ -6,13 +7,13 @@ import Input from "components/commons/Input";
 import SearchIcon from "assets/icon/search.svg";
 import BackIcon from "assets/icon/back.svg";
 
-export default function SearchPage() {
+export default function SearchPage(props) {
   const [search, setSearch] = useState("baju");
 
   return (
     <BackgroundPage padding="15px">
       <BoxSearch>
-        <Back>
+        <Back onClick={() => props.history.goBack()}>
           <img src={BackIcon} alt="Home" />
         </Back>
         <Input
@@ -105,6 +106,10 @@ export default function SearchPage() {
     </BackgroundPage>
   );
 }
+
+SearchPage.propTypes = {
+  history: PropTypes.object.isRequired
+};
 
 const BoxSearch = styled.div`
   display: flex;

@@ -1,15 +1,20 @@
-import { MainPage, SearchPage } from "components/pages";
+import { HomePage, SearchPage, PurchasePage } from "components/pages";
 
 const routes = [
   {
-    path: "/dashboard",
+    path: "/",
     exact: true,
-    component: MainPage
+    component: HomePage
   },
   {
     path: "/search",
     exact: true,
     component: SearchPage
+  },
+  {
+    path: "/purchase",
+    exact: true,
+    component: PurchasePage
   }
 ];
 

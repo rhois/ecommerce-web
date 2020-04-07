@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Styled from "styled-components";
-import Loader from "assets/icon/visionaire/loader.svg";
+import Loader from "assets/icon/loader.svg";
 
 function LoadingSpinner(props) {
   if (props.show) {

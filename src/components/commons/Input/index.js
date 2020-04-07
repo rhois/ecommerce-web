@@ -5,7 +5,6 @@ import Text from "./Text";
 import TextArea from "./TextArea";
 import DropDown from "./DropDown";
 import CheckBox from "./CheckBox";
-import RadioButton from "./InputRadio";
 import InputPassword from "./InputPassword";
 
 class Input extends React.Component {
@@ -30,9 +29,6 @@ class Input extends React.Component {
       }
       case "checkbox": {
         return <CheckBox {...this.props} />;
-      }
-      case "radio": {
-        return <RadioButton {...this.props} />;
       }
       default: {
         return <Text {...this.props} />;

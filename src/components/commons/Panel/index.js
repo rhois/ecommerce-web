@@ -2,7 +2,6 @@ import React from "react";
 import Styled from "styled-components";
 import PropTypes from "prop-types";
 import { Color } from "theme/Setting";
-import IconClose from "assets/icon/visionaire/exit-dark.svg";
 
 export default function Panel(props) {
   const { width, padding, children, border, shadow, title, onClose } = props;
@@ -16,16 +15,7 @@ export default function Panel(props) {
       onClose={onClose}
       {...props}
     >
-      {(title || onClose) && (
-        <Header>
-          {title}
-          {onClose && (
-            <BtnClose onClick={onClose}>
-              <img src={IconClose} alt="close" />
-            </BtnClose>
-          )}
-        </Header>
-      )}
+      {(title || onClose) && <Header>{title}</Header>}
       {children}
     </Wrapper>
   );
@@ -49,17 +39,6 @@ Panel.defaultProps = {
   title: null,
   onClose: null
 };
-
-const BtnClose = Styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor:pointer;
-  img{
-    width: 40px;
-    filter: g
-  }
-`;
 
 const Header = Styled.div`
   position: absolute;

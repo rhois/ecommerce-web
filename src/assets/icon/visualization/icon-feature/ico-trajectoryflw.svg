@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="34px"
+   height="34px"
+   viewBox="0 0 34 34"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ico-trajectoryflw.svg">
+  <metadata
+     id="metadata29">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview27"
+     showgrid="false"
+     inkscape:zoom="6.9411765"
+     inkscape:cx="17"
+     inkscape:cy="17"
+     inkscape:window-x="1920"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Icon/Analytic/trajectoryflw</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8">
+    <filter
+       x="-20.0%"
+       y="-20.0%"
+       width="140.0%"
+       height="140.0%"
+       filterUnits="objectBoundingBox"
+       id="filter-1">
+      <feGaussianBlur
+         stdDeviation="2"
+         in="SourceGraphic"
+         id="feGaussianBlur11" />
+    </filter>
+  </defs>
+  <g
+     id="Icon/Analytic/trajectoryflw"
+     transform="matrix(0.95957281,0,0,0.95957281,1.0474317,0.6152283)"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       id="Icon/Analytic/Esti"
+       transform="translate(2,2)">
+      <circle
+         id="Oval-3"
+         cx="15"
+         cy="15"
+         r="15"
+         style="fill:#03031d;stroke:#a4ff53" />
+      <circle
+         id="circle16"
+         cx="15"
+         cy="15"
+         r="14"
+         style="fill:#03031d;stroke:#f753ff;stroke-width:2;filter:url(#filter-1)" />
+      <circle
+         id="circle18"
+         cx="15"
+         cy="15"
+         r="15"
+         style="stroke:#f753ff" />
+    </g>
+    <g
+       id="Group-3"
+       transform="translate(10,8)">
+      <path
+         d="m 3.2607243,14.666667 c 3.5969719,0 6.7942807,0 9.5919257,0 4.196467,0 4.196467,-5.62963 0,-5.62963 -4.1964678,0 -5.0957108,0 -9.5919257,0 -4.496215,0 -4.19646731,-5.9259259 0,-5.9259259 2.7976448,0 4.9139601,0 6.3489457,0"
+         id="Line-6"
+         inkscape:connector-curvature="0"
+         style="stroke:#f8bbfb;stroke-width:1.62;stroke-linecap:square" />
+      <g
+         id="Group-2"
+         transform="translate(0,8)"
+         style="fill:#f753ff">
+        <path
+           d="m 0,2.5862881 0,0.7399495 0,1.630909 c 0,0.2491667 0.18284056,0.4530303 0.40631235,0.4530303 l 0.15575307,0 0,2.1367928 C 0.56206542,7.7961364 0.74490598,8 0.96837777,8 L 2.0586493,8 C 2.2821211,8 2.4649616,7.7961364 2.4649616,7.5469697 l 0,-2.1443433 0.1557531,0 c 0.2234718,0 0.4063123,-0.2037881 0.4063123,-0.4530303 l 0,-1.623283 0,-0.7399495 c 0,-0.2491666 -0.1828405,-0.4530302 -0.4063123,-0.4530302 l -2.21440235,0 C 0.17606869,2.1332579 0,2.337197 0,2.5862881 Z"
+           id="Path"
+           inkscape:connector-curvature="0" />
+        <ellipse
+           id="Oval"
+           cx="1.5135136"
+           cy="1.0666667"
+           rx="1.009009"
+           ry="1.0666667" />
+      </g>
+      <path
+         d="M 9.0810811,6.2222222 C 10.522522,4.2944376 11.243243,2.9355556 11.243243,2.1455762 11.243243,0.9606072 10.27521,0 9.0810811,0 7.8869519,0 6.9189189,0.9606072 6.9189189,2.1455762 c 0,0.7899794 0.7207207,2.1488614 2.1621622,4.076646 z"
+         id="path25"
+         inkscape:connector-curvature="0"
+         style="fill:#f753ff" />
+    </g>
+  </g>
+</svg>

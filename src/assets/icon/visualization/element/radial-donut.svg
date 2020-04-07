@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-radial-donut-24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-1764.000000, -1064.000000)" fill="#CCCCCC">
+            <g id="Group-60" transform="translate(1721.000000, 981.000000)">
+                <g id="chart-radial-donut" transform="translate(40.000000, 80.000000)">
+                    <path d="M19.9697,15.48 C19.7197,18.01 17.5897,19.98 14.9997,19.98 C13.2807,19.98 11.7597,19.11 10.8597,17.79 L4.6797,21.13 C6.7807,24.63 10.6197,26.98 14.9997,26.98 C21.4597,26.98 26.7307,21.88 26.9807,15.48 L19.9697,15.48 Z M2.9997,14.98 C2.9997,16.87 3.4297,18.65 4.2097,20.24 L10.3797,16.91 C10.1397,16.31 9.9997,15.66 9.9997,14.98 C9.9997,12.39 11.9697,10.26 14.4997,10.01 L14.4997,3 C8.0997,3.25 2.9997,8.52 2.9997,14.98 L2.9997,14.98 Z M15.4997,3 L15.4997,10.01 C17.8607,10.24 19.7407,12.12 19.9697,14.48 L26.9807,14.48 C26.7407,8.25 21.7307,3.24 15.4997,3 L15.4997,3 Z" id="chart-radial-donut-24px"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

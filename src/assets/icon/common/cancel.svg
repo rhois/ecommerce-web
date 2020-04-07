@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>cancel-80px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.8.1_Visualization-Editor_Multiple-Charts" transform="translate(-2278.000000, -485.000000)" fill="#CCCCCC">
+            <g id="Add-content-Copy" transform="translate(2175.000000, 383.000000)">
+                <path d="M143,182 C165.09139,182 183,164.09139 183,142 C183,119.90861 165.09139,102 143,102 C120.90861,102 103,119.90861 103,142 C103,164.09139 120.90861,182 143,182 Z M143,180 C163.98682,180 181,162.98682 181,142 C181,121.01318 163.98682,104 143,104 C122.01318,104 105,121.01318 105,142 C105,162.98682 122.01318,180 143,180 Z M132.115432,151.480107 L141.59554,142 L132.115432,132.519893 L133.519893,131.115432 L143,140.59554 L152.480107,131.115432 L153.884568,132.519893 L144.40446,142 L153.884568,151.480107 L152.480107,152.884568 L143,143.40446 L133.519893,152.884568 L132.115432,151.480107 Z" id="cancel-80px"></path>
+            </g>
+        </g>
+    </g>
+</svg>

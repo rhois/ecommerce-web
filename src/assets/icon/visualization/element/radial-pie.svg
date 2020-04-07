@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>radial-chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.6_Visualization-Editor_Chart-Block_Field-Properties" transform="translate(-20.000000, -223.000000)" fill="#CCCCCC">
+            <g id="side-bar-(chart)" transform="translate(0.000000, 58.000000)">
+                <g id="Group-73" filter="url(#filter-1)">
+                    <g id="Group-63" transform="translate(14.000000, 162.000000)">
+                        <g id="chart-radial-pie" transform="translate(6.000000, 0.000000)">
+                            <g id="Page-1">
+                                <path d="M22.5303,23 L15.8903,15.28 L25.7303,12.6 C25.9103,13.37 26.0003,14.17 26.0003,15 C26.0003,18.15 24.6703,21 22.5303,23 L22.5303,23 Z M15.0003,26 C14.0803,26 13.1803,25.89 12.3303,25.67 L15.2103,16.03 L21.7693,23.66 C19.9103,25.13 17.5503,26 15.0003,26 L15.0003,26 Z M11.3703,25.38 C9.2503,24.64 7.4203,23.27 6.1203,21.49 L14.1203,16.19 L11.3703,25.38 Z M4.6303,11.34 L4.6303,11.33 C6.0603,7.31 9.7703,4.35 14.2003,4.03 L14.4803,14.32 L4.6303,11.34 Z M25.4693,11.64 L15.4803,14.36 L15.2003,4 C20.0003,4.09 24.0703,7.28 25.4693,11.64 L25.4693,11.64 Z M26.7003,12.34 C26.6303,12.01 26.5403,11.69 26.4403,11.38 C24.9203,6.57 20.4603,3.07 15.1703,3.01 C15.1103,3 15.0603,3 15.0003,3 C14.7193,3 14.4503,3.01 14.1803,3.03 C9.2903,3.36 5.2193,6.61 3.6803,11.04 L3.6703,11.04 L1.7593,10.45 C1.2703,11.88 1.0003,13.41 1.0003,15 C1.0003,18.02 1.9603,20.82 3.6003,23.11 L5.2593,22.02 C5.2703,22.03 5.2703,22.04 5.2803,22.05 C6.7193,24.02 8.7303,25.54 11.0803,26.34 C11.3903,26.46 11.7103,26.55 12.0403,26.63 C12.9803,26.87 13.9803,27 15.0003,27 C17.8003,27 20.3893,26.04 22.4293,24.42 C22.6903,24.22 22.9503,24 23.1903,23.77 C25.5403,21.57 27.0003,18.46 27.0003,15 C27.0003,14.08 26.9003,13.19 26.7003,12.34 L26.7003,12.34 Z" id="radial-chart"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

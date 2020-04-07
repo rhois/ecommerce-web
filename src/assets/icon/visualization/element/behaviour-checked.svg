@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-40.4%" y="-16.7%" width="180.8%" height="153.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.182999321 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Crowd-Beh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-6.000000, -11.000000)" stroke-linecap="square">
+        <g id="Group-10" filter="url(#filter-1)" transform="translate(4.000000, 4.000000)" stroke="#1CCC65" stroke-width="2">
+            <polyline id="Line" points="7 13.2876798 11.3506208 16.9131971 15.2171068 12.7052265 18.6216472 9"></polyline>
+        </g>
+    </g>
+</svg>

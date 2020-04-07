@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="84px" viewBox="0 0 47 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>marker side crowdbeh</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-37.5%" y="-17.6%" width="175.0%" height="136.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Crowd-Beh-Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-183.000000, -467.000000)">
+        <g id="Group-6">
+            <g id="Group-7" transform="translate(37.000000, 54.000000)">
+                <g id="Group-3" transform="translate(0.000000, 421.000000)">
+                    <g id="Group-5" filter="url(#filter-1)" transform="translate(153.500000, 0.000000)">
+                        <g id="marker-side-crowdbeh">
+                            <path d="M2.71766892,0.201579932 L29.1800784,0.201579932 C30.2846479,0.201579932 31.1800784,1.09701043 31.1800784,2.20157993 L31.1800784,22.2090623 C31.1800784,22.9196044 30.8030899,23.5767991 30.1897362,23.9355012 L16.9585314,31.6733876 C16.3348395,32.0381357 15.5629079,32.0381357 14.939216,31.6733876 L1.70801119,23.9355012 C1.09465746,23.5767991 0.717668916,22.9196044 0.717668916,22.2090623 L0.717668916,2.20157993 C0.717668916,1.09701043 1.61309942,0.201579932 2.71766892,0.201579932 Z" id="Rectangle-13" fill="#FA2D78"></path>
+                            <path d="M15.9488737,31.5 L15.9488737,66.5316538" id="Line-3" stroke="#FA2D78" stroke-width="3" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

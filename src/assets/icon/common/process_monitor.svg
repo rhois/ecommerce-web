@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>process monitor</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DD_profile" transform="translate(-14.000000, -131.000000)" fill="#CCCCCC">
+            <g id="Group-62" filter="url(#filter-1)" transform="translate(6.000000, 0.000000)">
+                <g id="Group-33" transform="translate(0.000000, 41.000000)">
+                    <g id="Group-28" transform="translate(10.000000, 91.000000)">
+                        <g id="process-monitor">
+                            <path d="M8.5,1.5 L2.5,1.5 C1.948,1.5 1.5,1.948 1.5,2.5 L1.5,8.5 C1.5,9.053 1.948,9.5 2.5,9.5 L8.5,9.5 C9.052,9.5 9.5,9.053 9.5,8.5 L9.5,2.5 C9.5,1.948 9.052,1.5 8.5,1.5 L8.5,1.5 Z M2.5,8.5 L8.5,8.5 L8.5,2.5 L2.5,2.5 L2.5,8.5 Z M16.2559,9.0293 C15.9799,9.0293 15.7559,8.8053 15.7559,8.5293 L15.7559,4.5013 C15.7559,4.2253 15.5309,4.0013 15.2559,4.0013 L11.2279,4.0013 C10.9509,4.0013 10.7279,3.7773 10.7279,3.5013 C10.7279,3.2243 10.9509,3.0013 11.2279,3.0013 L15.2559,3.0013 C16.0829,3.0013 16.7559,3.6743 16.7559,4.5013 L16.7559,8.5293 C16.7559,8.8053 16.5319,9.0293 16.2559,9.0293 Z M8.543,16.7569 L4.515,16.7569 C3.688,16.7569 3.015,16.0839 3.015,15.2569 L3.015,11.2289 C3.015,10.9519 3.238,10.7289 3.515,10.7289 C3.791,10.7289 4.015,10.9519 4.015,11.2289 L4.015,15.2569 C4.015,15.5319 4.239,15.7569 4.515,15.7569 L8.543,15.7569 C8.819,15.7569 9.043,15.9809 9.043,16.2569 C9.043,16.5329 8.819,16.7569 8.543,16.7569 Z M14.271,10.2715 C12.062,10.2715 10.271,12.0625 10.271,14.2715 C10.271,16.4805 12.062,18.2715 14.271,18.2715 C16.48,18.2715 18.271,16.4805 18.271,14.2715 C18.271,12.0625 16.48,10.2715 14.271,10.2715 Z M14.271,11.2715 C15.925,11.2715 17.271,12.6175 17.271,14.2715 C17.271,15.9255 15.925,17.2715 14.271,17.2715 C12.617,17.2715 11.271,15.9255 11.271,14.2715 C11.271,12.6175 12.617,11.2715 14.271,11.2715 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

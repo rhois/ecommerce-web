@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="34px"
+   height="34px"
+   viewBox="0 0 34 34"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ico-water-level.svg">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview25"
+     showgrid="false"
+     inkscape:zoom="6.9411765"
+     inkscape:cx="17"
+     inkscape:cy="17"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+  <title
+     id="title4">Icon / Analytic / Circle / Water Level Monitoring</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8">
+    <filter
+       x="-20.0%"
+       y="-20.0%"
+       width="140.0%"
+       height="140.0%"
+       filterUnits="objectBoundingBox"
+       id="filter-1">
+      <feGaussianBlur
+         stdDeviation="2"
+         in="SourceGraphic"
+         id="feGaussianBlur11" />
+    </filter>
+  </defs>
+  <g
+     id="Icon-/-Analytic-/-Circle-/-Water-Level-Monitoring"
+     transform="matrix(0.95153059,0,0,0.95153059,0.88245408,0.90957442)"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       id="Icon/Analytic/Esti"
+       transform="translate(2,2)">
+      <circle
+         id="Oval-3"
+         cx="15"
+         cy="15"
+         r="15"
+         style="fill:#03031d;stroke:#a4ff53" />
+      <circle
+         id="circle16"
+         cx="15"
+         cy="15"
+         r="14"
+         style="fill:#03031d;stroke:#e7ff55;stroke-width:2;filter:url(#filter-1)" />
+      <circle
+         id="circle18"
+         cx="15"
+         cy="15"
+         r="15"
+         style="stroke:#c8ff55" />
+    </g>
+    <g
+       id="flood"
+       transform="translate(10,9)"
+       style="fill:#e4ffac">
+      <path
+         d="m 0.55924441,6.7487993 1.16954179,0 0,1.1884913 c 0.1753831,-0.05658 0.4093342,-0.05658 0.5847173,-0.05658 0.5848244,0 1.1695418,0.2830037 1.578876,0.7357475 0.2924122,0.3961637 0.8771296,0.5093238 1.2864638,0.22632 0.058461,-0.05658 0.1753831,-0.11316 0.2338441,-0.22632 0.7017465,-0.8489076 1.9882103,-0.9620676 2.8653398,-0.2830037 0.1169221,0.11316 0.2338441,0.1698436 0.2924122,0.2830037 0.2923052,0.3961637 0.8771296,0.5093238 1.2864638,0.22632 0.058461,-0.05658 0.1753828,-0.11316 0.2338438,-0.22632 0.409335,-0.4527438 0.994052,-0.7357475 1.578876,-0.7357475 0.175383,0 0.409335,0 0.584718,0.05658 l 0,-1.1884913 1.169541,0 c 0.526257,0 0.760101,-0.6224838 0.409335,-0.9620675 L 7.4008977,0.12738275 c -0.2339512,-0.16984367 -0.5847174,-0.16984367 -0.7602075,0 L 0.20847825,5.7867318 C -0.20085601,6.1263155 0.03298809,6.7487993 0.55924441,6.7487993 Z m 7.01703629,-2.8296227 1.1695418,0 0,1.1318077 -1.1695418,0 0,-1.1318077 z m 0,1.6978151 1.1695418,0 0,1.1318076 -1.1695418,0 0,-1.1318076 z m -2.3389764,-1.6978151 1.1695418,0 0,1.1318077 -1.1695418,0 0,-1.1318077 z m 0,1.6978151 1.1695418,0 0,1.1318076 -1.1695418,0 0,-1.1318076 z"
+         id="Shape"
+         inkscape:connector-curvature="0"
+         style="fill-rule:nonzero" />
+      <path
+         d="m 11.666702,12 c -0.350021,0 -0.466659,0.09998 -0.758361,0.350011 C 10.208298,13.100023 8.9249573,13.2 8.0499573,12.600046 7.9333191,12.499977 7.8166809,12.449989 7.7583618,12.350011 7.4666595,12 6.8833618,11.900023 6.4750214,12.149966 c -0.058319,0.05008 -0.1750641,0.100068 -0.2333832,0.200045 -0.4083405,0.4 -0.9333191,0.650035 -1.5749359,0.650035 C 4.0832977,13.000046 3.5,12.750011 3.0916595,12.350011 2.7999573,12 2.2166595,11.900023 1.8083191,12.149966 1.75,12.200046 1.6333618,12.250034 1.5750427,12.350011 1.1667023,12.750011 0.58329772,13.000046 0,13.000046 L 0,14 l 14,0 0,-0.999954 c -0.583298,0 -1.166702,-0.250035 -1.575043,-0.650035 C 12.133362,12.099977 12.016617,12 11.666702,12 Z"
+         id="Path"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 11.666702,9 C 10.5,9 10.5,10.200022 9.3332977,10.200022 8.1667023,10.200022 8.1667023,9 7,9 5.8332977,9 5.8332977,10.200022 4.6667023,10.200022 3.5,10.200022 3.5,9 2.3332977,9 1.1667023,9 1.1667023,10.200022 0,10.200022 L 0,12 C 0.35002135,12 0.46665954,11.880031 0.75836182,11.579998 1.1667023,11.100011 1.75,10.799978 2.3332977,10.799978 c 0.5834046,0 1.1667023,0.300033 1.5750428,0.78002 C 4.2000427,12 4.7833405,12.119969 5.1916809,11.820046 5.25,11.760062 5.3666382,11.699967 5.4249573,11.579998 6.125,10.680009 7.4083405,10.56004 8.2833405,11.279965 c 0.1166381,0.120079 0.2332763,0.180064 0.2917022,0.300033 0.2915955,0.420002 0.875,0.539971 1.2833405,0.240048 0.058319,-0.05998 0.1749578,-0.120079 0.2332768,-0.240048 0.700042,-0.899989 1.983383,-1.019958 2.858383,-0.300033 0.116638,0.120079 0.233276,0.180064 0.291595,0.300033 C 13.533341,11.880031 13.649979,12 14,12 l 0,-1.799978 C 12.833298,10.200022 12.833298,9 11.666702,9 Z"
+         id="path23"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

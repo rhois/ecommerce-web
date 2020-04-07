@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="50px" viewBox="0 0 35 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>LPR Point</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LPR-Point">
+            <g id="Group-10" opacity="0.75" transform="translate(1.183239, 0.758476)">
+                <path d="M16.3638732,22.9441394 L16.3638732,47.6532127" id="Line-4" stroke="#9C27B0" stroke-width="2" stroke-linecap="square"></path>
+                <polygon id="Polygon" fill="#9C27B0" points="16.3638732 0.359608807 32.6530939 9.60016768 32.6530939 28.0812854 16.3638732 37.3218443 0.0746525175 28.0812854 0.0746525175 9.60016768"></polygon>
+            </g>
+            <g id="Group" transform="translate(1.000000, 13.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="2.74271349" y="0.0105645965" width="27.2405215" height="11.8686734"></rect>
+                <text id="X-XXX-XX" font-family="Dosis-Medium, Dosis" font-size="7.5" font-weight="400" fill="#868686">
+                    <tspan x="3.50047422" y="8.52192471">X XXX XX</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

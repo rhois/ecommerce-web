@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8">
+    <g fill="#6C6CA3" fill-rule="evenodd" font-family="Dosis-Regular, Dosis" font-size="18">
+        <text transform="matrix(-1 0 0 1 7 -9)">
+            <tspan x="0" y="18">&lt;</tspan>
+        </text>
+        <text transform="matrix(-1 0 0 1 15 -9)">
+            <tspan x="4" y="18">&lt;</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="34px"
+   height="34px"
+   viewBox="0 0 34 34"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ico-area-acquisition.svg">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview29"
+     showgrid="false"
+     inkscape:zoom="13.882353"
+     inkscape:cx="18.083915"
+     inkscape:cy="13.601452"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+  <title
+     id="title4">Icon / Analytic / Circle / Area Aquisition</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8">
+    <filter
+       x="-20.0%"
+       y="-20.0%"
+       width="140.0%"
+       height="140.0%"
+       filterUnits="objectBoundingBox"
+       id="filter-1">
+      <feGaussianBlur
+         stdDeviation="2"
+         in="SourceGraphic"
+         id="feGaussianBlur11" />
+    </filter>
+  </defs>
+  <g
+     id="Icon-/-Analytic-/-Circle-/-Area-Aquisition"
+     transform="matrix(0.95663263,0,0,0.95663263,0.67961766,0.79487381)"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       id="Icon/Analytic/Esti"
+       transform="translate(2,2)">
+      <circle
+         id="Oval-3"
+         cx="15"
+         cy="15"
+         r="15"
+         style="fill:#03031d;stroke:#ff55ae" />
+      <circle
+         id="circle16"
+         cx="15"
+         cy="15"
+         r="14"
+         style="fill:#03031d;stroke:#ff5590;stroke-width:2;filter:url(#filter-1)" />
+      <circle
+         id="circle18"
+         cx="15"
+         cy="15"
+         r="15"
+         style="stroke:#ff55ae" />
+    </g>
+    <g
+       id="main"
+       transform="translate(8,8)"
+       style="fill:#ffacea">
+      <path
+         d="M 5.3617127,1.2368109 C 6.4661174,0.71832561 7.6992208,0.42857143 9,0.42857143 c 4.733869,0 8.571429,3.83755927 8.571429,8.57142857 0,4.733869 -3.83756,8.571429 -8.571429,8.571429 -4.7338693,0 -8.57142857,-3.83756 -8.57142857,-8.571429 0,-2.2374527 0.85729507,-4.2746735 2.26132577,-5.8011029 0.1094326,0.278095 0.2894573,0.520679 0.518005,0.7056831 C 2.0114317,5.2635769 1.2857143,7.0470383 1.2857143,9 c 0,4.260482 3.4538033,7.714286 7.7142857,7.714286 4.260482,0 7.714286,-3.453804 7.714286,-7.714286 0,-4.2604824 -3.453804,-7.7142857 -7.714286,-7.7142857 -1.1100785,0 -2.1653936,0.2344701 -3.1191222,0.6565873 C 5.7710927,1.6641658 5.5906668,1.4216314 5.3617127,1.2368109 Z"
+         id="Combined-Shape"
+         inkscape:connector-curvature="0"
+         style="fill-rule:nonzero" />
+      <path
+         d="M 13.528153,5.0633887 C 14.444921,6.1170208 15,7.4936876 15,9 15,12.313709 12.313709,15 9,15 5.6862915,15 3,12.313709 3,9 3,5.6862915 5.6862915,3 9,3 9.572088,3 10.125476,3.0800664 10.649568,3.2296048 10.472465,3.4557455 10.350931,3.7274959 10.305519,4.024305 9.8886234,3.91522 9.451094,3.8571429 9,3.8571429 6.1596784,3.8571429 3.8571429,6.1596784 3.8571429,9 c 0,2.840322 2.3025355,5.142857 5.1428571,5.142857 2.840322,0 5.142857,-2.302535 5.142857,-5.142857 0,-1.251082 -0.446728,-2.3978252 -1.18937,-3.2894168 0.242514,-0.162606 0.441216,-0.3854849 0.574666,-0.6471945 z"
+         id="path22"
+         inkscape:connector-curvature="0"
+         style="fill-rule:nonzero" />
+      <circle
+         id="Oval"
+         cx="9"
+         cy="9"
+         r="3" />
+      <circle
+         id="circle25"
+         cx="4.2857141"
+         cy="2.5714285"
+         r="1.7142857" />
+      <circle
+         id="circle27"
+         cx="12"
+         cy="4.2857141"
+         r="1.7142857" />
+    </g>
+  </g>
+</svg>

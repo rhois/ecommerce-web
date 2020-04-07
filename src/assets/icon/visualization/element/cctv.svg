@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>cctv (3)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-40.4%" y="-16.7%" width="180.8%" height="153.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.182999321 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="cctv" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-5.000000, -10.000000)">
+        <g id="Group-10" filter="url(#filter-1)" transform="translate(4.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="cctv-(3)" transform="translate(14.266044, 12.357212) rotate(-40.000000) translate(-14.266044, -12.357212) translate(5.766044, 5.357212)">
+                <path d="M14,5.3861626 L3.65156435,0.0911907076 C3.2236927,-0.119515617 2.72387802,0.04436708 2.50426249,0.485289573 L0.088491559,5.50712364 C-0.115978081,5.94804613 0.0430538613,6.46310603 0.470925514,6.68942023 L3.63641845,8.31263932 L2.92834766,9.84611313 L3.75379917,10.2714277 L3.45845414,10.864527 C3.87117989,10.9698802 4.25361385,11.1844885 4.54895888,11.4693322 L4.85944982,10.8489192 L5.72655255,11.2898416 L6.43462334,9.75636784 L10.8345071,12 L14,5.3861626 Z" id="Shape"></path>
+                <polygon id="Shape" transform="translate(14.099483, 9.590646) rotate(2.000000) translate(-14.099483, -9.590646) " points="13.8641229 6.5522356 11.9019001 11.0995934 13.5929341 12.7570928 16.2970653 6.4241998"></polygon>
+                <g id="Group" transform="translate(1.000000, 10.000000)">
+                    <path d="M2.2525,0.629061224 C1.28875,0.629061224 0.505,1.38334694 0.505,2.30285714 C0.505,3.22595918 1.2925,3.97665306 2.2525,3.97665306 C3.2125,3.97665306 4,3.22236735 4,2.30285714 C4,1.38334694 3.2125,0.629061224 2.2525,0.629061224 Z M2.2525,3.18644898 C1.7425,3.18644898 1.33375,2.79493878 1.33375,2.30644898 C1.33375,1.81795918 1.7425,1.42644898 2.2525,1.42644898 C2.7625,1.42644898 3.17125,1.81795918 3.17125,2.30644898 C3.17125,2.79493878 2.7475,3.18644898 2.2525,3.18644898 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

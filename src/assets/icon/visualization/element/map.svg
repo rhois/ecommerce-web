@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-map-geo-24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-1764.000000, -1104.000000)" fill="#CCCCCC">
+            <g id="Group-60" transform="translate(1721.000000, 981.000000)">
+                <g id="chart-map-geo" transform="translate(40.000000, 120.000000)">
+                    <path d="M14.9998,3 C8.3698,3 2.9998,8.37 2.9998,15 C2.9998,21.63 8.3698,27 14.9998,27 C21.6298,27 26.9998,21.63 26.9998,15 C26.9998,8.37 21.6298,3 14.9998,3 Z M14.9998,26 C8.9298,26 3.9998,21.07 3.9998,15 C3.9998,8.93 8.9298,4 14.9998,4 C21.0698,4 25.9998,8.93 25.9998,15 C25.9998,21.07 21.0698,26 14.9998,26 Z M15.5999,18.96 L14.4299,16.12 C14.3299,15.87 14.1299,15.68 13.8899,15.57 L11.0399,14.4 L17.8799,12.12 L15.5999,18.96 Z M19.0199,10.7 L18.9999,10.7 C18.9799,10.7 18.9599,10.71 18.9399,10.72 L8.8899,14.06 C8.6399,14.15 8.6299,14.49 8.8699,14.59 L13.4999,16.5 L15.4099,21.13 C15.4599,21.25 15.5699,21.3 15.6699,21.3 C15.7799,21.3 15.8999,21.24 15.9399,21.11 L19.2899,11.06 C19.3499,10.88 19.2099,10.7 19.0199,10.7 L19.0199,10.7 Z M19.3799,11.62 L19.3699,11.62 L19.3799,11.62 Z" id="chart-map-geo-24px"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -34,7 +34,7 @@ export default function Login() {
 
   return (
     <BackgroundPage container="center">
-      <Panel width="350px" shadow>
+      <Panel width="275px" shadow>
         <Fragment>
           <Title>LOGIN</Title>
           <FormLayout>

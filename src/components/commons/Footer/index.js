@@ -1,14 +1,15 @@
 import React from "react";
 import Styled from "styled-components";
 import PropTypes from "prop-types";
-import Text from "components/commons/Text";
 import { Color } from "theme/Setting";
 
 function Footer() {
   return (
     <WrapFooter>
-      <Text size={12}>PRIVACY POLICY</Text>
-      <Text size={12}>© {new Date().getFullYear()}. ALL RIGHTS RESERVED</Text>
+      <a href="#">Home</a>
+      <a href="#">Feed</a>
+      <a href="#">Cart</a>
+      <a href="#">Profile</a>
     </WrapFooter>
   );
 }
@@ -33,11 +34,13 @@ const WrapFooter = Styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 15px;
   font-family: 'Barlow','Arial' !important;
   a{
     text-decoration: none;
     color: ${Color.primary1};
     text-decoration: none;
   }
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
 `;

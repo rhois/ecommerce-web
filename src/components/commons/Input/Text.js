@@ -14,6 +14,7 @@ const RelativeDivRow = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
+  width: 100%;
 `;
 
 const InputLabel = styled.label`
@@ -75,12 +76,26 @@ const InputError = styled(InputLabel)`
   color: ${Color.primary1};
   margin-bottom: 5px;
 `;
+
+const IconWrapper = styled.div`
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 20px;
+  }
+`;
+
 export default class Text extends Component {
   render() {
     const {
       label,
       tooltip,
       children,
+      icon,
       error,
       fontSize,
       addonAfter,
@@ -97,6 +112,7 @@ export default class Text extends Component {
             </InputLabel>
           )}
           <RelativeDivRow>
+            {icon !== undefined ? <img src={icon} alt="icon" /> : ""}
             <InputText {...defaultProps} error={error} fontSize={fontSize} />
             {children}
             {addonAfter && <InputAfter>{addonAfter}</InputAfter>}
@@ -105,7 +121,18 @@ export default class Text extends Component {
         </RelativeDivCol>
       );
     }
-    return <InputText {...defaultProps} />;
+    return (
+      <RelativeDivRow>
+        {icon !== undefined ? (
+          <IconWrapper>
+            <img src={icon} alt="icon" />
+          </IconWrapper>
+        ) : (
+          ""
+        )}
+        <InputText {...defaultProps} />
+      </RelativeDivRow>
+    );
   }
 }
 
@@ -115,5 +142,6 @@ Text.propTypes = {
   error: PropTypes.string,
   children: PropTypes.element,
   addonAfter: PropTypes.element,
-  fontSize: PropTypes.string
+  fontSize: PropTypes.string,
+  icon: PropTypes.string
 };

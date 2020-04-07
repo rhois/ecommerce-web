@@ -8,6 +8,7 @@ export default function BackgroundPage(props) {
       pos={props.bgPosition}
       bg={props.background}
       container={props.container}
+      padding={props.padding}
     >
       {props.children}
     </Wrapper>
@@ -18,13 +19,15 @@ BackgroundPage.propTypes = {
   children: PropTypes.any,
   background: PropTypes.string.isRequired,
   bgPosition: PropTypes.oneOf(["top", "left", "bottom", "right", "center"]),
-  container: PropTypes.string
+  container: PropTypes.string,
+  padding: PropTypes.string
 };
 
 BackgroundPage.defaultProps = {
   position: "center",
   children: null,
-  container: null
+  container: null,
+  padding: "0px"
 };
 
 const Wrapper = Styled.div`
@@ -44,4 +47,6 @@ const Wrapper = Styled.div`
     justify-content: center;
     align-items: center;
   `}
+  padding: ${props => props.padding};
+  box-sizing: border-box;
 `;

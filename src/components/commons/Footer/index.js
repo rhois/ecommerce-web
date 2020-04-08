@@ -3,13 +3,13 @@ import Styled from "styled-components";
 import PropTypes from "prop-types";
 import { Color } from "theme/Setting";
 
-function Footer() {
+function Footer(props) {
   return (
     <WrapFooter>
-      <a href="#">Home</a>
-      <a href="#">Feed</a>
-      <a href="#">Cart</a>
-      <a href="#">Profile</a>
+      <a>Home</a>
+      <a>Feed</a>
+      <a>Cart</a>
+      <a onClick={() => props.history.push("/purchase")}>Profile</a>
     </WrapFooter>
   );
 }
@@ -21,7 +21,8 @@ Footer.propTypes = {
     PropTypes.object.isRequired,
     PropTypes.string.isRequired,
     PropTypes.array.isRequired
-  ])
+  ]),
+  history: PropTypes.object.isRequired
 };
 
 const WrapFooter = Styled.footer`
@@ -40,6 +41,7 @@ const WrapFooter = Styled.footer`
     text-decoration: none;
     color: ${Color.primary1};
     text-decoration: none;
+    cursor: pointer;
   }
   box-sizing: border-box;
   border-top: 1px solid #ddd;

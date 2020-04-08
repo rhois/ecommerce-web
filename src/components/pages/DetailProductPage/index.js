@@ -10,19 +10,17 @@ import Heart from "assets/icon/heart.svg";
 import FBShareIcon from "assets/icon/share/facebook.svg";
 import TwitterShareIcon from "assets/icon/share/twitter.svg";
 import LinkedinShareIcon from "assets/icon/share/linkedin.svg";
+import HeartFull from "assets/icon/heart-full.svg";
 
 export default function DetailProductPage(props) {
+  const { detail } = props.location.state;
   return (
     <BackgroundPage padding="15px">
       <BoxImage>
         <Back onClick={() => props.history.goBack()}>
           <img src={BackIcon} alt="Home" />
         </Back>
-        <img
-          src={
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-          }
-        />
+        <img src={detail.imageUrl} />
         <button>
           <img src={ShareIcon} alt="share" />
         </button>
@@ -57,14 +55,22 @@ export default function DetailProductPage(props) {
         </Share>
       </BoxImage>
       <BoxTitle>
-        <Text size={25}>Ini nama barang satu</Text>
-        <a href="#">
-          <img src={Heart} alt="Like" />
-        </a>
+        <Text size={25}>{detail.title}</Text>
+        {detail.loved === 1 ? (
+          <a href="#">
+            <img src={HeartFull} alt="Like" />
+          </a>
+        ) : (
+          <a href="#">
+            <img src={Heart} alt="Like" />
+          </a>
+        )}
       </BoxTitle>
-      <Text>Lorem ipsum dolor sit amet</Text>
+      <Text lineHeight={25} size={18}>
+        {detail.description}
+      </Text>
       <Buy>
-        <Text>$400</Text>
+        <Text>{detail.price}</Text>
         <Button
           type="secondary"
           onClick={() => {}}
@@ -78,7 +84,8 @@ export default function DetailProductPage(props) {
 }
 
 DetailProductPage.propTypes = {
-  history: PropTypes.object.isRequired
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 };
 
 const BoxImage = styled.div`

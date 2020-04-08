@@ -10,7 +10,7 @@ export default function PurchasePage(props) {
     <BackgroundPage padding="15px">
       <BoxSearch>
         <Back onClick={() => props.history.goBack()}>
-          <img src={BackIcon} alt="Home" />
+          <img src={BackIcon} alt="Back" />
         </Back>
         <Text size={20}>Purchase History</Text>
       </BoxSearch>

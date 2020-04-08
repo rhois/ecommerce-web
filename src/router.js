@@ -1,4 +1,9 @@
-import { HomePage, SearchPage, PurchasePage } from "components/pages";
+import {
+  HomePage,
+  SearchPage,
+  DetailProductPage,
+  PurchasePage
+} from "components/pages";
 
 const routes = [
   {
@@ -15,6 +20,11 @@ const routes = [
     path: "/purchase",
     exact: true,
     component: PurchasePage
+  },
+  {
+    path: "/detail",
+    exact: true,
+    component: DetailProductPage
   }
 ];
 

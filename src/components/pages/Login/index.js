@@ -1,5 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import moment from "moment";
+import Cookies from "universal-cookie";
 import styled from "styled-components";
 import { Color } from "theme/Setting";
 import Input, { PasswordToggled } from "components/commons/Input";
@@ -8,16 +10,18 @@ import Panel from "components/commons/Panel";
 import BackgroundPage from "components/commons/BackgroundPage";
 import LogoGoogle from "assets/icon/google.svg";
 import LogoFacebook from "assets/icon/facebook.svg";
-import { GoogleLogin } from "react-google-login";
+import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 
-export default function Login() {
+const cookies = new Cookies();
+export default function Login(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
   const [isLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [disabled, setDisabled] = useState(true);
+  const [cookie, setCookie] = useState("");
 
   useEffect(() => {
     if (username !== "" && password !== "") {
@@ -31,6 +35,33 @@ export default function Login() {
       setIsError(false);
     }
   }, [username, password]);
+
+  const responseGoogle = response => {
+    cookies.set("access_token", response.accessToken, {
+      path: "/",
+      expires: moment(moment())
+        .add(25, "m")
+        .toDate()
+    });
+    setCookie(response.accessToken);
+  };
+
+  const responseFacebook = response => {
+    cookies.set("access_token", response.accessToken, {
+      path: "/",
+      expires: moment(moment())
+        .add(25, "m")
+        .toDate()
+    });
+    setCookie(response.accessToken);
+  };
+
+  useEffect(() => {
+    const accessToken = cookies.get("access_token");
+    if (accessToken !== undefined && cookie !== "") {
+      props.history.push("/");
+    }
+  });
 
   return (
     <BackgroundPage container="center">
@@ -76,8 +107,7 @@ export default function Login() {
               appId="789191518272705"
               autoLoad={false}
               fields="name,email,picture"
-              onClick={() => {}}
-              callback={() => {}}
+              callback={responseFacebook}
               render={renderProps => (
                 <Button
                   type="google"
@@ -94,25 +124,16 @@ export default function Login() {
               )}
             />
             <GoogleLogin
-              clientId={process.env.REACT_APP_GOOGLE_CONSOLE_ID}
+              clientId="1088223243945-8lt1nloecvt9evc8qkbf21lagbdqeu4v.apps.googleusercontent.com"
               render={renderProps => (
-                <Button
-                  type="google"
-                  onClick={renderProps.onClick}
-                  style={{
-                    boxShadow: "0 2px 20px 2px rgba(213, 77, 64, 0.35)",
-                    backgroundImage:
-                      "linear-gradient(to right, #d54d40, #a52416)",
-                    width: "100%"
-                  }}
-                >
-                  <img src={LogoGoogle} alt="Google" />
+                <ButtonGoogle onClick={renderProps.onClick}>
+                  <img src={LogoGoogle} alt="google" />
                   Sign in with Google
-                </Button>
+                </ButtonGoogle>
               )}
               buttonText="Login"
-              onSuccess={() => {}}
-              onFailure={() => {}}
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
             />
           </FormLayout>
         </Fragment>
@@ -181,5 +202,34 @@ const WrapOr = styled.div`
   hr {
     width: 100px;
     border: 0.5px solid rgba(122, 76, 164, 0.3);
+  }
+`;
+
+const ButtonGoogle = styled.button`
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-decoration: none;
+  border-radius: 8px;
+  outline: none;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  user-select: none;
+  min-height: 40px;
+  padding: 0 16px;
+  box-shadow: 0 2px 20px 2px rgba(213, 77, 64, 0.35);
+  background-image: linear-gradient(to right, #d54d40, #a52416);
+  width: 100%;
+  color: #fff;
+  img {
+    margin-right: 10px;
   }
 `;

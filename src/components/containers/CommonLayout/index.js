@@ -1,10 +1,19 @@
 /* eslint-disable camelcase */
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import Cookies from "universal-cookie";
 import Styled from "styled-components";
 import { connect } from "react-redux";
 
+const cookies = new Cookies();
 function CommonLayout(props) {
+  const accessToken = cookies.get("access_token");
+  useEffect(() => {
+    if (accessToken === undefined) {
+      props.history.push("/login");
+    }
+  });
+
   return (
     <Main>
       <Layout>{props.children}</Layout>

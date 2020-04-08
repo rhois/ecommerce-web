@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import BackgroundPage from "components/commons/BackgroundPage";
 import Button from "components/commons/Button";
@@ -11,12 +12,19 @@ import FBShareIcon from "assets/icon/share/facebook.svg";
 import TwitterShareIcon from "assets/icon/share/twitter.svg";
 import LinkedinShareIcon from "assets/icon/share/linkedin.svg";
 import HeartFull from "assets/icon/heart-full.svg";
+import { addPurchase } from "store/actions/purchase";
 
-export default function DetailProductPage(props) {
+function DetailProductPage(props) {
+  const { dispatch } = props;
   const [socialShare, setSocialShare] = useState(false);
   const [like, setLike] = useState(false);
 
   const { detail } = props.location.state;
+
+  const handleAddPurchase = items => {
+    dispatch(addPurchase([items]));
+    // this.setState({ input: "" });
+  };
 
   return (
     <BackgroundPage padding="15px">
@@ -86,7 +94,7 @@ export default function DetailProductPage(props) {
         <Text>{detail.price}</Text>
         <Button
           type="secondary"
-          onClick={() => {}}
+          onClick={() => handleAddPurchase(detail)}
           style={{ background: "#372463", color: "#fff", marginLeft: 20 }}
         >
           Buy
@@ -98,8 +106,11 @@ export default function DetailProductPage(props) {
 
 DetailProductPage.propTypes = {
   history: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired
+  location: PropTypes.object.isRequired,
+  dispatch: PropTypes.func.isRequired
 };
+
+export default connect()(DetailProductPage);
 
 const BoxImage = styled.div`
   position: relative;

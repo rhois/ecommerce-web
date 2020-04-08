@@ -1,11 +1,13 @@
 import React from "react";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import BackgroundPage from "components/commons/BackgroundPage";
 import Text from "components/commons/Text";
 import BackIcon from "assets/icon/back.svg";
 
-export default function PurchasePage(props) {
+function PurchasePage(props) {
+  const { purchaseHistory } = props;
   return (
     <BackgroundPage padding="15px">
       <BoxSearch>
@@ -15,89 +17,45 @@ export default function PurchasePage(props) {
         <Text size={20}>Purchase History</Text>
       </BoxSearch>
       <SearchResult>
-        <SearchItems>
-          <BoxImage>
-            <img
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
+        {purchaseHistory.length > 0 &&
+          purchaseHistory.map(res => (
+            <SearchItems
+              key={res.id}
+              onClick={() =>
+                props.history.push({
+                  pathname: `product-detail/${res.title}`,
+                  state: { detail: res }
+                })
               }
-            />
-          </BoxImage>
-          <Description>
-            <Text size={18} lineHeight={35}>
-              Nama Baju 1
-            </Text>
-            <Text lineHeight={20}>$15</Text>
-          </Description>
-        </SearchItems>
-        <SearchItems>
-          <BoxImage>
-            <img
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-              }
-            />
-          </BoxImage>
-          <Description>
-            <Text size={18} lineHeight={35}>
-              Nama Baju 1
-            </Text>
-            <Text lineHeight={20}>$15</Text>
-          </Description>
-        </SearchItems>
-        <SearchItems>
-          <BoxImage>
-            <img
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-              }
-            />
-          </BoxImage>
-          <Description>
-            <Text size={18} lineHeight={35}>
-              Nama Baju 1
-            </Text>
-            <Text lineHeight={20}>$15</Text>
-          </Description>
-        </SearchItems>
-        <SearchItems>
-          <BoxImage>
-            <img
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-              }
-            />
-          </BoxImage>
-          <Description>
-            <Text size={18} lineHeight={35}>
-              Nama Baju 1
-            </Text>
-            <Text lineHeight={20}>$15</Text>
-          </Description>
-        </SearchItems>
-        <SearchItems>
-          <BoxImage>
-            <img
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-              }
-            />
-          </BoxImage>
-          <Description>
-            <Text size={18} lineHeight={35}>
-              Nama Baju 1
-            </Text>
-            <Text lineHeight={20}>$15</Text>
-          </Description>
-        </SearchItems>
+            >
+              <BoxImage>
+                <img src={res.imageUrl} />
+              </BoxImage>
+              <Description>
+                <Text size={18} lineHeight={35}>
+                  {res.title}
+                </Text>
+                <Text lineHeight={20}>{res.price}</Text>
+              </Description>
+            </SearchItems>
+          ))}
       </SearchResult>
     </BackgroundPage>
   );
 }
 
+function mapStateToProps(state) {
+  return {
+    purchaseHistory: state.purchaseHistory
+  };
+}
+
 PurchasePage.propTypes = {
-  history: PropTypes.object.isRequired
+  history: PropTypes.object.isRequired,
+  purchaseHistory: PropTypes.array.isRequired
 };
+
+export default connect(mapStateToProps)(PurchasePage);
 
 const BoxSearch = styled.div`
   display: flex;
@@ -117,6 +75,7 @@ const SearchItems = styled.div`
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  cursor: pointer;
 `;
 const BoxImage = styled.div`
   max-width: 125px;

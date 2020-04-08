@@ -4,8 +4,8 @@ import BackgroundPage from "components/commons/BackgroundPage";
 import Footer from "components/commons/Footer";
 import Input from "components/commons/Input";
 import Text from "components/commons/Text";
+import Button from "components/commons/Button";
 import SearchIcon from "assets/icon/search.svg";
-import HomeIcon from "assets/icon/home.svg";
 import Heart from "assets/icon/heart.svg";
 import HeartFull from "assets/icon/heart-full.svg";
 import styled from "styled-components";
@@ -24,15 +24,31 @@ export default function HomePage(props) {
 
   const handleEnter = useCallback(event => {
     if (event.keyCode === 13) {
-      props.history.push("/search");
+      props.history.push({
+        pathname: "/search",
+        state: { product }
+      });
     }
   });
+
+  function handleSearch(term) {
+    props.history.push({
+      pathname: "/search",
+      state: { product: term }
+    });
+  }
 
   return (
     <BackgroundPage padding="15px">
       <BoxSearch>
         <Home>
-          <img src={HomeIcon} alt="Home" />
+          <Button
+            type="secondary"
+            onClick={() => handleSearch(product)}
+            style={{ background: "#372463", color: "#fff", marginLeft: 20 }}
+          >
+            Search
+          </Button>
         </Home>
         <Input
           icon={SearchIcon}
@@ -72,7 +88,7 @@ export default function HomePage(props) {
                 <BoxImage
                   onClick={() =>
                     props.history.push({
-                      pathname: "product-detail",
+                      pathname: `product-detail/${res.title}`,
                       state: { detail: res }
                     })
                   }

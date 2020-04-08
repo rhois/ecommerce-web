@@ -22,7 +22,7 @@ const routes = [
     component: PurchasePage
   },
   {
-    path: "/product-detail",
+    path: "/product-detail/:name",
     exact: true,
     component: DetailProductPage
   }

@@ -10,6 +10,8 @@ import BackIcon from "assets/icon/back.svg";
 export default function SearchPage(props) {
   const [search, setSearch] = useState("baju");
 
+  const { product } = props.location.state;
+
   return (
     <BackgroundPage padding="15px">
       <BoxSearch>
@@ -26,81 +28,27 @@ export default function SearchPage(props) {
       </BoxSearch>
       {search !== "" && (
         <SearchResult>
-          <SearchItems>
-            <BoxImage>
-              <img
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-                }
-              />
-            </BoxImage>
-            <Description>
-              <Text size={18} lineHeight={35}>
-                Nama Baju 1
-              </Text>
-              <Text lineHeight={20}>$15</Text>
-            </Description>
-          </SearchItems>
-          <SearchItems>
-            <BoxImage>
-              <img
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-                }
-              />
-            </BoxImage>
-            <Description>
-              <Text size={18} lineHeight={35}>
-                Nama Baju 1
-              </Text>
-              <Text lineHeight={20}>$15</Text>
-            </Description>
-          </SearchItems>
-          <SearchItems>
-            <BoxImage>
-              <img
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-                }
-              />
-            </BoxImage>
-            <Description>
-              <Text size={18} lineHeight={35}>
-                Nama Baju 1
-              </Text>
-              <Text lineHeight={20}>$15</Text>
-            </Description>
-          </SearchItems>
-          <SearchItems>
-            <BoxImage>
-              <img
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-                }
-              />
-            </BoxImage>
-            <Description>
-              <Text size={18} lineHeight={35}>
-                Nama Baju 1
-              </Text>
-              <Text lineHeight={20}>$15</Text>
-            </Description>
-          </SearchItems>
-          <SearchItems>
-            <BoxImage>
-              <img
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/430px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg"
-                }
-              />
-            </BoxImage>
-            <Description>
-              <Text size={18} lineHeight={35}>
-                Nama Baju 1
-              </Text>
-              <Text lineHeight={20}>$15</Text>
-            </Description>
-          </SearchItems>
+          {product.map(res => (
+            <SearchItems
+              key={res.id}
+              onClick={() =>
+                props.history.push({
+                  pathname: `product-detail/${res.title}`,
+                  state: { detail: res }
+                })
+              }
+            >
+              <BoxImage>
+                <img src={res.imageUrl} />
+              </BoxImage>
+              <Description>
+                <Text size={18} lineHeight={35}>
+                  {res.title}
+                </Text>
+                <Text lineHeight={20}>{res.price}</Text>
+              </Description>
+            </SearchItems>
+          ))}
         </SearchResult>
       )}
     </BackgroundPage>
@@ -108,7 +56,8 @@ export default function SearchPage(props) {
 }
 
 SearchPage.propTypes = {
-  history: PropTypes.object.isRequired
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 };
 
 const BoxSearch = styled.div`
@@ -129,6 +78,7 @@ const SearchItems = styled.div`
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  cursor: pointer;
 `;
 const BoxImage = styled.div`
   max-width: 125px;

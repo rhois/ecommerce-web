@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import BackgroundPage from "components/commons/BackgroundPage";
 import Button from "components/commons/Button";
@@ -13,7 +13,11 @@ import LinkedinShareIcon from "assets/icon/share/linkedin.svg";
 import HeartFull from "assets/icon/heart-full.svg";
 
 export default function DetailProductPage(props) {
+  const [socialShare, setSocialShare] = useState(false);
+  const [like, setLike] = useState(false);
+
   const { detail } = props.location.state;
+
   return (
     <BackgroundPage padding="15px">
       <BoxImage>
@@ -21,47 +25,56 @@ export default function DetailProductPage(props) {
           <img src={BackIcon} alt="Home" />
         </Back>
         <img src={detail.imageUrl} />
-        <button>
+        <button
+          onClick={() => {
+            setSocialShare(true);
+            if (socialShare) {
+              setSocialShare(false);
+            }
+          }}
+        >
           <img src={ShareIcon} alt="share" />
         </button>
-        <Share>
-          <li>
-            <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={FBShareIcon} alt="facebook" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={`https://twitter.com/home?status=`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={TwitterShareIcon} alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={`https://www.linkedin.com/shareArticle?mini=true&url=`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={LinkedinShareIcon} alt="linkedin" />
-            </a>
-          </li>
-        </Share>
+        {socialShare && (
+          <Share>
+            <li>
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={FBShareIcon} alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a
+                href={`https://twitter.com/home?status=${window.location.href}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={TwitterShareIcon} alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&${detail.title}&summary=&source=website`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={LinkedinShareIcon} alt="linkedin" />
+              </a>
+            </li>
+          </Share>
+        )}
       </BoxImage>
       <BoxTitle>
         <Text size={25}>{detail.title}</Text>
-        {detail.loved === 1 ? (
-          <a href="#">
+        {detail.loved === 1 || like ? (
+          <a onClick={() => setLike(false)}>
             <img src={HeartFull} alt="Like" />
           </a>
         ) : (
-          <a href="#">
+          <a onClick={() => setLike(true)}>
             <img src={Heart} alt="Like" />
           </a>
         )}
@@ -124,13 +137,15 @@ const Share = styled.ul`
   margin: 0;
   padding: 0;
   z-index: 10;
-  display: none;
 `;
 
 const BoxTitle = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
+  a {
+    cursor: pointer;
+  }
 `;
 
 const Buy = styled.div`

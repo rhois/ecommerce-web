@@ -112,7 +112,13 @@ export default class Text extends Component {
             </InputLabel>
           )}
           <RelativeDivRow>
-            {icon !== undefined ? <img src={icon} alt="icon" /> : ""}
+            {icon !== undefined ? (
+              <IconWrapper>
+                <img src={icon} alt="icon" />
+              </IconWrapper>
+            ) : (
+              ""
+            )}
             <InputText {...defaultProps} error={error} fontSize={fontSize} />
             {children}
             {addonAfter && <InputAfter>{addonAfter}</InputAfter>}
